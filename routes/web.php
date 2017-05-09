@@ -20,27 +20,31 @@ Route::get('/doctor', function () {
 Route::get('/profile', function () {
     return view('pages.profile');
 });
+Route::get('/doctors', 'DocController@index');
 Route::get('/blogs', 'PostController@index');
 Route::get('/tstPost/{id}', 'PostController@show');
+Route::get('/doc/{id}', 'DocController@show');
 Route::get('/hopitals', function () {
     return view('pages.categories.hopital');
 });
 Route::get('/clinics', function () {
     return view('pages.categories.clinics');
 });
+Route::get('/tstP', function () {
+    return view('pages.tstProfile');
+});
+
 Route::get('/payement', function () {
     return view('pages.payement');
 });
 Route::get('packages', function () {
     return view('pages.packages');
 });
-Route::get('doctors', function () {
-    return view('pages.doctors');
-});
+
 Route::get('homepage', function () {
     return view('pages.homepage');
 });
-Route::get('login', function () {
+Route::get('log', function () {
     return view('pages.login');
 });
 

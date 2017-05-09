@@ -30,7 +30,7 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" >CATEGORIES</a>
                <ul class="dropdown-menu">
-              <li><a href="{{ url('/doctor') }}">DOCTORS</a></li>
+              <li><a href="{{ url('/doctors') }}">DOCTORS</a></li>
               <li><a href="{{ url('/hopitals')}}">HOSPTALS</a></li>
               <li><a href="{{ url('/clinics')}}">CLINICS</a></li>
               <li><a href="#">PHARMACIES</a></li>

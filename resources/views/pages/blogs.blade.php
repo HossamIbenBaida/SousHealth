@@ -59,9 +59,13 @@
           <div class="row">
             <div class="col-md-4">
 
-              <a href="#">
-                <img class="img-responsive" src={{asset('storage/'.$post->image)}} alt="">
-              </a>
+                <figure class="tg-feature-img">
+                    <a href="https://themographics.com/wordpress/directory/family-clinic/"><img width="470" height="300" src={{asset('storage/'.$post->image)}} alt="family-clinic"></a>
+                    <ul class="tg-metadata">
+                        <li><i class="fa fa-clock-o"></i><time datetime="2016-04-21">21 Apr, 2016</time> </li>
+                        <li><i class="fa fa-comment-o"></i><a href="https://themographics.com/wordpress/directory/family-clinic/#comments"> 4 Comments</a></li>
+                    </ul>
+                </figure>
             </div>
 
             <div class="col-md-8">

@@ -138,12 +138,12 @@ if(s1.value == "127"){
       <div id="tg-sortable" class="tg-tabs-nav tg-sortable" role="tablist">
 
         <ul class="list-group"></ul>
-        <div class="well active current-directory"><a href="# "><span>Profile </span></a></div>
-        <div class="well"><a href="# "><span>Photo </span></a></div>
-        <div class="well"><a href="# "><span>Password </span></a></div>
-        <div class="well"><a href="# "><span>compte </span></a></div>
-        <div class="well"><a href="# "><span>package </span></a></div>
-        <div class="well"><a href="# "><span>historie </span></a></div>
+        <div class="well active current-directory"><a href="# "><span>Doctors </span></a></div>
+        <div class="well"><a href="# "><span>Pharmacy </span></a></div>
+        <div class="well"><a href="# "><span>Clinics </span></a></div>
+        <div class="well"><a href="# "><span>Hospetals </span></a></div>
+        <div class="well"><a href="# "><span>Blood banks </span></a></div>
+        <div class="well"><a href="# "><span>Fitness Clubs </span></a></div>
         <div class="clearfix"></div>
 
       </div>
@@ -286,7 +286,7 @@ if(s1.value == "127"){
                   <label>
 							                                  <i class="icon-stethoscope"></i>
                                                             Docteur<span class="count">9</span>
-                          </label>
+                  </label>
                 </a>
               </div>
             </div>
@@ -298,7 +298,7 @@ if(s1.value == "127"){
                   <label>
 							                                  <i class="icon-Hospitalmedicalsignalofacrossinacircle"></i>
                                                             hôpital<span class="count">7</span>
-                          </label>
+                  </label>
                 </a>
               </div>
             </div>
@@ -310,7 +310,7 @@ if(s1.value == "127"){
                   <label>
 							                                  <i class="icon-Clinichistorymedicalpaperonclipboard"></i>
                                                             clinique<span class="count">8</span>
-                          </label>
+                  </label>
                 </a>
               </div>
             </div>
@@ -356,6 +356,7 @@ if(s1.value == "127"){
     </div>
   </div>
 </div>
+<div class="container">
 <section class="tg-main-section haslayout tg-areuadoctor stretch_section" style="padding-bottom: 0px; background-repeat: no-repeat; background-position: 0% 100%; position: relative; left: -89.5px; box-sizing: border-box; width: 1349px; padding-left: 89.5px; padding-right: 89.5px;"
   data-speed="0.5" data-bleed="0" data-appear-top-offset="600" data-parallax="scroll" data-position="center 0" data-image-src="http://santemap.firstonenews.com/wp-content/uploads/2016/03/bgparallax-01.jpg">
   <div class="builder-items">
@@ -563,6 +564,7 @@ if(s1.value == "127"){
     </div>
   </div>
 </section>
+</div>
 <div class="container">
 <section class="tg-main-section haslayout  stretch_section" style="background-image: url(&quot;http://santemap.firstonenews.com/wp-content/uploads/2016/08/bgparallax-03.jpg&quot;); padding: 50px 89.5px; background-repeat: no-repeat; background-position: 0% 100%; background-size: cover; position: relative; left: -105px; box-sizing: border-box; width: 1349px;">
 

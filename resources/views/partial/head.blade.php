@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
 
     <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
-  
+
+
+
 
     <link href="{{ asset('css/transition.css') }}" rel="stylesheet">
     <link href="{{ asset('css/inline.css') }}" rel="stylesheet">
@@ -25,6 +27,7 @@
     <link href="{{ asset('css/tst.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
