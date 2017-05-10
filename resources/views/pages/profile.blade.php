@@ -29,9 +29,7 @@
     <div class="well"><a href="# "><span>Photo </span></a></div>
     <div class="well"><a href="# "><span>Password </span></a></div>
     <div class="well"><a href="# "><span>compte </span></a></div>
-    <div class="well"><a href="# "><span>package </span></a></div>
-    <div class="well"><a href="# "><span>historie </span></a></div>
-    <div class="well"><a href="# "><span>pivate settings</span></a></div>
+    <div class="well"><a href="{{ url('/becomepro') }}"><span>become a professionel membre</span></a></div>
     <div class="clearfix"></div>
 
   </div>

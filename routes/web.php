@@ -21,6 +21,7 @@ Route::get('/profile', function () {
     return view('pages.profile');
 });
 Route::get('/doctors', 'DocController@index');
+Route::post('/newPro', 'ProfessionalController@store')->name('newPro');
 Route::get('/blogs', 'PostController@index');
 Route::get('/tstPost/{id}', 'PostController@show');
 Route::get('/doc/{id}', 'DocController@show');
@@ -47,7 +48,9 @@ Route::get('homepage', function () {
 Route::get('log', function () {
     return view('pages.login');
 });
-
+Route::get('DocPro', function () {
+    return view('pages.docProfile');
+});
 Route::get('tst', function () {
     return view('pages.tsthome');
 });
@@ -56,6 +59,15 @@ Route::get('contact_us', function () {
 });
 Route::get('tstPost', function () {
     return view('pages.tstPost');
+});
+Route::get('ProProfile', function () {
+    return view('pages.pro_prof');
+});
+Route::get('becomepro', function () {
+    return view('pages.becomePro');
+});
+Route::get('tttt', function () {
+    return view('pages.tttt');
 });
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

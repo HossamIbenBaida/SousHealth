@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Doctor;
+use App\Speciality;
 use Illuminate\Http\Request;
 
-class DocController extends Controller
+class SpecialityController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $posts = Doctor::paginate(5);
-        return view('pages.categories.doctors',compact('posts'));
+
     }
 
     /**
@@ -20,7 +24,7 @@ class DocController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -31,28 +35,27 @@ class DocController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Speciality  $speciality
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Speciality $speciality)
     {
-        $post = Doctor::find($id);
-        return view('pages.docProfile',compact('post'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Speciality  $speciality
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Speciality $speciality)
     {
         //
     }
@@ -61,10 +64,10 @@ class DocController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Speciality  $speciality
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Speciality $speciality)
     {
         //
     }
@@ -72,10 +75,10 @@ class DocController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Speciality  $speciality
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Speciality $speciality)
     {
         //
     }
