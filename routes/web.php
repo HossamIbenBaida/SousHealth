@@ -17,11 +17,14 @@ Route::get('/', function () {
 Route::get('/doctor', function () {
     return view('pages.categories.doctors');
 });
-Route::get('/profile', function () {
+Route::get('/userProfile', function () {
     return view('pages.profile');
 });
+Route::get('/profile', 'ProfileController@verifier');
 Route::get('/doctors', 'DocController@index');
-Route::post('/newPro', 'ProfessionalController@store')->name('newPro');
+Route::post('/newPro', 'UserProController@store')->name('newPro');
+
+
 Route::get('/blogs', 'PostController@index');
 Route::get('/tstPost/{id}', 'PostController@show');
 Route::get('/doc/{id}', 'DocController@show');
@@ -40,7 +43,7 @@ Route::get('/payement', function () {
 });
 Route::get('packages', function () {
     return view('pages.packages');
-});
+})->middleware('pro_user');
 
 Route::get('homepage', function () {
     return view('pages.homepage');
@@ -63,7 +66,7 @@ Route::get('tstPost', function () {
 Route::get('ProProfile', function () {
     return view('pages.pro_prof');
 });
-Route::get('becomepro', function () {
+Route::get('pro-registre', function () {
     return view('pages.becomePro');
 });
 Route::get('tttt', function () {
@@ -74,5 +77,6 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Auth::routes();
+//profile::routes();
 Route::get('/home', 'HomeController@index');
 // Route::resource('posts','PostController');

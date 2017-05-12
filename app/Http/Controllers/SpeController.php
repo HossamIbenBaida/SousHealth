@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\spe;
 use Illuminate\Http\Request;
-use TCG\Voyager\Models\Post;
 
-
-class PostController extends Controller
+class SpeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-      $posts = Post::paginate(5);
-      return view('pages.blog.blog',compact('posts'));
+        //
     }
 
     /**
@@ -43,22 +41,21 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\spe  $spe
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(spe $spe)
     {
-      $post = Post::find($id);
-      return view('pages.blog.article',compact('post'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\spe  $spe
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(spe $spe)
     {
         //
     }
@@ -67,10 +64,10 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\spe  $spe
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, spe $spe)
     {
         //
     }
@@ -78,10 +75,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\spe  $spe
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(spe $spe)
     {
         //
     }

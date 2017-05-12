@@ -24,7 +24,7 @@ class ProfessionalController extends Controller
      */
     public function create()
     {
-return view('pages.becomePro');
+     return view('pages.becomePro');
     }
 
     /**
@@ -41,8 +41,8 @@ return view('pages.becomePro');
 
         $id=auth()->user()->id;
         $tel="025559888";
-//        $email=auth()->user()->email;
-        $email="email2@email.com";
+       $email=auth()->user()->email;
+//        $email="email10@email.com";
 
         $Contact->adresse = $request->adresse ;
         $Contact->zipcode=$request->zip ;

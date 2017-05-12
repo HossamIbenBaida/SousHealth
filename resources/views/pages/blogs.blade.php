@@ -71,7 +71,7 @@
             <div class="col-md-8">
               <h4>{{$post->excerpt}}</h4>
               <p style="font-size: 13px;">{{trim(strip_tags($post->body))}}</p>
-              <a class="btn btn-primary" href="{{ url('/tstPost/'.$post->id) }}">View details </a>
+              <a class="btn btn-primary" href="{{ url('/blog/'.$post->id) }}">View details </a>
             </div>
           </div>
         @endforeach
